@@ -3,25 +3,25 @@ $(document).ready(function () {
     let timerInterval;
 
     let playAudio = {
-        movementAudio : new Audio('../audio/movement.mp3'),
-        crashAudio : new Audio('../audio/crash.mp3'),
+        movementAudio: new Audio('../audio/movement.mp3'),
+        crashAudio: new Audio('../audio/crash.mp3'),
     };
 
-    let movementSound =  function () {
+    let movementSound = function () {
         playAudio.movementAudio.play();
         playAudio.crashAudio.pause();
         playAudio.crashAudio.currentTime = 0.0;
     };
 
 
-    let crashSound =  function () {
+    let crashSound = function () {
         playAudio.crashAudio.play();
         playAudio.movementAudio.pause();
         playAudio.movementAudio.currentTime = 0.0;
     };
 
 
-    let stopAudio =  function () {
+    let stopAudio = function () {
         playAudio.crashAudio.pause();
         playAudio.crashAudio.currentTime = 0.0;
         playAudio.movementAudio.pause();
@@ -74,12 +74,12 @@ $(document).ready(function () {
         '<p class="highscore" title="Click 5 times to reset"></p>'
     )
     let scoreCounterElem = $('<p class="timer"></p>')
-    let instructionElement = $('<p class="instruction">Use the arrows keys</p>')
+    let instructionElement = $('<p class="instruction">Use the arrows keys for directions <br> Left Arrow ==>  Left Move<br> Right Arrow ==> Right Move <br> Down Arrow ==> Down Move<br> SpaceBar ==> Jump <br> Escape key ==> Pause</p>')
     let yourCurrentScore = 0
     $(scoreCounterElem).text(yourCurrentScore)
     highScoreElem.text('High Score : ' + localStorage.getItem('highScore') || 0);
 
-    let restartTextElem =  $('<div class="restarttext"></div>');
+    let restartTextElem = $('<div class="restarttext"></div>');
 
     let gameHasStarted = false
     let gameHasEnded = false

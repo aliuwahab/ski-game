@@ -1,48 +1,52 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
-#gamedetails{
+#gamedetails {
     position: fixed;
     width: 200px;
     height: 200px;
     top: 100px;
     left: 50%;
-    margin-left: -100px; /* Negative half of width. */
-    margin-top: -100px; /* Negative half of height. */
-    text-align: center;
-}
-h2.scoretext{
+    margin-left: -100px;
+    /* Negative half of width. */
+    margin-top: -100px;
+    /* Negative half of height. */
     text-align: center;
 }
 
-p.highscore{
+h2.scoretext {
+    text-align: center;
+}
+
+p.highscore {
     border: 2px solid #e43843;
     padding: 5px;
     text-align: center;
     cursor: pointer;
 }
 
-p.timer{
+p.timer {
     border: 2px dashed #3fcde4;
     padding: 5px;
     text-align: center;
 }
 
-.restarttext{
-     position: fixed;
-     top: 50%;
-     left: 50%;
-     width: 250px;
-     font-size: 25px;
-     text-align: center;
-     margin-left: -125px;
- }
-
-.instruction{
+.restarttext {
     position: fixed;
-    top: 10%;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    font-size: 25px;
+    text-align: center;
+    margin-left: -125px;
+}
+
+.instruction {
+    position: fixed;
+    top: 2%;
     left: 10%;
     width: 250px;
     font-size: 25px;
