@@ -16,5 +16,8 @@ Implementations:
 5. Displays Scores.
 6. Determines Highest Score.
 7. Add Movement and Crash Sound.
+8. Added Q-Unit Test Framework
 
-Write unit tests for your code
+#TO DO:
+
+1. Refactor code to write unit test
