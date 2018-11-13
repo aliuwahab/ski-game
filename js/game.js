@@ -31,7 +31,7 @@ $(document).ready(function () {
     let gameHasEnded = false
 
     function startCountingScores(gameHasStarted) {
-        console.log(gameHasStarted)
+
         if (skierDirection !== 5 && gameHasStarted === true) {
             timerInterval = setInterval(function () {
                 $(scoreCounterElem).text((yourCurrentScore += 10))
@@ -50,9 +50,6 @@ $(document).ready(function () {
         skierMapX = 0
         skierMapY = 0
         obstacles = []
-
-        playAudio.movementSound()
-
         $('.restarttext').text('')
         $(scoreCounterElem).text(yourCurrentScore)
         highScoreElem.text('High Score : ' + localStorage.getItem('highScore') || 0)
